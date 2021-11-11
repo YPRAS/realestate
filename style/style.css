@@ -1,0 +1,433 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.bg_img {
+  padding-left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: slideBg 15s infinite 0s;
+          animation: slideBg 15s infinite 0s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  background-image: url("../images/building.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+span {
+  content: 'Hi';
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background: #50505a;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  -webkit-box-shadow: 10px 10px 40px -14px #000;
+          box-shadow: 10px 10px 40px -14px #000;
+}
+
+span a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  position: relative;
+  bottom: 5px;
+  padding: 0 1em;
+  font-size: 1.5em;
+}
+
+span a > img {
+  position: relative;
+  top: 5px;
+  padding: 0 10px;
+}
+
+span {
+  margin: 0 5px 0 15px;
+}
+
+@-webkit-keyframes slideBg {
+  0% {
+    background-image: url("../images/building.jpg");
+  }
+  50% {
+    background-image: url("../images/gym.jpg");
+  }
+  100% {
+    background-image: url("../images/pool.jpg");
+  }
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url("../images/building.jpg");
+  }
+  50% {
+    background-image: url("../images/gym.jpg");
+  }
+  100% {
+    background-image: url("../images/pool.jpg");
+  }
+}
+
+.intro {
+  width: 70%;
+  text-align: center;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.intro h1 {
+  color: #fff;
+  margin: 0em;
+  padding-left: 10px;
+  font-size: 5em;
+  font-weight: 10vw;
+  text-shadow: 0px 0px 10px #000;
+}
+
+.intro p {
+  color: #fff;
+  margin: 1em;
+  font-size: 1em;
+  font-weight: 600;
+  text-shadow: 0px 0px 10px #000;
+}
+
+.container-1 {
+  margin-top: 1em;
+  background-color: #dfdbdb;
+}
+
+.container-1 h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
+  padding-top: 1%;
+}
+
+.glance-continer {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2px;
+}
+
+.glance {
+  text-align: center;
+}
+
+.glance img {
+  width: 50px;
+}
+
+.container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+}
+
+.content-img {
+  width: 30%;
+  padding-right: 2%;
+}
+
+.content-img img {
+  width: 100%;
+}
+
+.container-2 .content {
+  width: 70%;
+}
+
+.container-2 .content h3 {
+  margin-top: 0px;
+}
+
+.container-3 {
+  background-color: #dfdbdb;
+}
+
+.container-3 .amenities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.amenities-content {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2px;
+}
+
+.amenities-img {
+  text-align: center;
+}
+
+.amenities-img img {
+  width: 50px;
+}
+
+.table {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-backface-visibility: 5px;
+          backface-visibility: 5px;
+  margin: 2em 0;
+  background-size: cover;
+  overflow: scroll;
+}
+
+.table .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  border-radius: 1em;
+  margin-bottom: 2em;
+  overflow: auto;
+}
+
+.table-content th, td {
+  padding: 1em;
+}
+
+.footer {
+  background-color: #dfdbdb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-info a {
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 2em;
+}
+
+.footer-info a > img {
+  padding-right: 12px;
+  width: 20px;
+}
+
+.form {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 40px -10px #000;
+          box-shadow: 0 0 40px -10px #000;
+  margin: 3vh auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  position: relative;
+}
+
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Montserrat',sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+.form input:focus {
+  border-bottom: 2px solid #78788c;
+}
+
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: 'Montserrat',sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.form button:hover {
+  background: #78788c;
+  color: #fff;
+}
+
+.form div {
+  content: 'Hi';
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  -webkit-box-shadow: 10px 10px 40px -14px #000;
+          box-shadow: 10px 10px 40px -14px #000;
+}
+
+@media only screen and (max-width: 768px) {
+  .glance-continer {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .amenities-content {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .container-2 {
+    display: block;
+  }
+  .content-img {
+    width: 100%;
+  }
+  .container-2 .content {
+    width: 100%;
+  }
+  .footer {
+    display: block;
+  }
+  .footer-info {
+    margin-top: 10vh;
+  }
+  .intro h1 {
+    font-size: 3em;
+  }
+  .intro p {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .glance-continer {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .amenities-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .intro h1 {
+    font-size: 3em;
+  }
+  .intro p {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
